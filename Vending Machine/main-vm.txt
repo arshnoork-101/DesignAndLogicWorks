@@ -1,0 +1,11 @@
+1. START
+2. Defining Vending machine states: Idle State, Active State, Payment State, Cancel State
+3. Initialization: Defining inventory and session.
+4. Call the Idle module.
+5. Call the Active module.
+6. Is the pay button pressed?
+	YES:
+		7. Move to the Payment module.
+	No:
+		8. Continue in Active module.
+9. END
