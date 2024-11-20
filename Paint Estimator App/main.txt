@@ -1,0 +1,40 @@
+001. Start
+
+002. Declare: BaseTotal,BaseRate,FinishTotal,FinishRate,SubTotal,Taxes,TotalAmount,TotalArea,NumOfBaseCans,NumOfFinishCans,
+     RateOfTax=13,BaseRate=46.25, FinishRate = 54.50.
+
+003. Call areaCalculation subprocess and store the return value in TotalArea 
+
+004. Call canCalculation subprocess and store the return values in NumOfBaseCans,NumOfFinishCans
+
+//Calculating amounts for receipt
+
+005. Is NumOfBaseCans >0?
+        Yes:
+006. 	Calculate BaseTotal = BaseRate*NumOfBaseCans.
+
+007. Is NumOfFinishCans >0?
+        Yes:
+008.    Calculate FinishTotal = FinishRate*NumOfFinishCans.        
+
+009. Calculate SubTotal = BaseTotal + FinishTotal
+
+010. Calculate Taxes= RateOfTax*SubTotal
+
+011. Calculate TotalAmount = SubTotal + Taxes. 
+
+//Printing receipt
+
+012. Display: "Total Area: " <TotalArea> sq. metres
+
+012. Display: BaseRate, NumOfBaseCans, BaseTotal 
+
+013. Display: FinishRate, NumOfFinishCans, FinishTotal  
+ 
+014. Display: Your sub-total is 'SubTotal'.
+
+018. Display: Your taxes is 'Taxes'.
+
+019. Display: Your total amount is 'TotalAmount'.
+
+020. End

@@ -1,0 +1,34 @@
+1. START
+2. Receive the value of the Area variable from Logic3 and store it in TotalArea.
+3. Declare variables BaseAreaCoverage=11, FinishingAreaCoverage=16, BaseCans, FinishingCans, RemainderArea, BaseCoats, FinishingCoats, recommendedFinishingCoats.  
+4. Calculate TotalArea%BaseAreaCoverage and store it in RemainderArea.
+5. Calculate (TotalArea-RemainderArea)/BaseAreaCoverage and store it in BaseCans.
+6. Is RemainderArea!=0
+       Yes:
+7.     Add 1 to BaseCans. 
+8. Calculate TotalArea%FinishingAreaCoverage and store it in RemainderArea.
+9. Calculate (TotalArea-RemainderArea)/FinishingAreaCoverage and store it in FinishingCans.
+10. Is RemainderArea!=0
+       Yes:
+11.    Add 1 to FinishingCans. 
+12. Display: Recommended number of base coats=2.  
+13. Prompt: How many Base Coats do you want?
+14. Store the user input in BaseCoats.
+15. Calculate BaseCans=BaseCans*BaseCoats
+16. Display: Number of Base Cans required: <BaseCans>
+17. Is BaseCoats < 4?
+    YES:
+18. 	Calculate recommendedFinishingCoats = 3 - BaseCoats
+19. 	Display: Recommended number of finishing Coats: recommendedFinishingCoats
+20. How many Finishing Coats do you want?
+21. Store the input in FinishingCoats.
+22. Calculate FinishingCans = FinishingCans*FinishingCoats
+23. Display: Number of Finishing Cans required: <FinishingCans>
+24. Return BaseCans and FinishingCans.
+25. END
+
+
+
+
+
+	

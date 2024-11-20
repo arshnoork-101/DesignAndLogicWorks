@@ -1,0 +1,52 @@
+1. Start
+2. Initialize Area=0, wallWidth=0, wallHeight=0, objectWidth=0, objectHeight=0, numOfWalls=0, rectangleheight=0, rectangleWidth=0
+3. Display "Let's start with first room"
+//Collecting data for the room 
+4. Display: "Let's start with the first wall of this room."
+5. Set numOfWalls = 0
+//Collecting data for the wall
+6. Prompt: "Enter the height of the wall"
+7. Store the user input in wallHeight
+8. Prompt: "Enter the width of the wall"
+9. Store the user input in wallWidth
+10. Area = Area + (wallWidth * WallHeight) 
+11.Prompt: "Is there any window/door or anything else on the wall where paint is not required? Yes/No"
+12.Did user select "Yes" ?
+         Yes:
+13.      Prompt: "Enter the height of the object."
+14.      Store the user input in objectHeight
+15.      Prompt: "Enter the width of the object."
+16.      Store the user input in objectWidth
+17.      Area = Area - (objectWidth * objectHeight) 
+18.      Prompt: "Is there any other object on this wall? Yes/No"
+19.      Did user select yes?
+                 Yes:
+20.              Go to step 13
+21.Prompt: "Is there any other wall in this room?  Yes/No"
+22.Did User select Yes?
+          Yes:
+23.       Add 1 to numOfWalls 
+24.       Go to step 6
+          No:
+// Calculating Ceiling Area
+25.       Display "You can calculate the ceiling area through floor, divide your floor into definite rectangles, if it is not!"
+26.       Display "Lets' start with first rectangle"
+27.       Prompt: "Enter height: "
+28.       Store user input in rectangleheight
+29.       Prompt: "Enter width: "
+30.       Store user input in rectanglewidth
+31.       Area = Area + (rectangleheight * rectanglewidth) 
+32.       Prompt: "Is there any other rectangle (Yes/No)?"
+33.       Did user input yes?
+              Yes:
+34.           Go to step 27
+35.       Display "This room's required area has been successfully calulated!"
+36.       Prompt : "Is there any other room you want to add? Yes/No"
+37.       Did User select Yes?
+                  Yes:
+38.               Go to step 4
+39.Display "Yayy!! Measurements done"
+40.Return the value of Area variable
+41.End
+ 
+
