@@ -1,0 +1,68 @@
+1.Start
+2.Disable all the row/column button and command button and Enable Payment Module Hardware and Cancel button
+3.Declare the variable PaymentOption, slotID, i=0, startTime and call the variables numOfProducts (type of products bought), OrderedslotID[] from Active module		
+4.Did User press the Cancel button?
+		Yes:
+5.		Go to Cancel State.
+		No:
+6.		Prompt to choose the Payment Option: Press 1 for Credit Card, 2 for Bank Card, 3 for NFC phone, 4 for Vending Machine Phone Application
+7.		Store the answer in variable PaymentOption
+8.		Start 2 seconds timer, startTime = currentSystemTime
+9.		Is PaymentOption = 1?
+			Yes:
+10.			Call Credit Card API for transaction
+11.			Go to step 26
+			No:
+12.			Is PaymentOption = 2?
+				Yes:
+13.				Call Bank Card API for transaction
+14.				Go to step 26
+				No:
+15.				Is PaymentOption = 3?
+					Yes:
+16.					Call NFC phone API for transaction
+17.					Go to step 26
+					No:
+18.					Is PaymentOption=4?
+						Yes:
+19.						Call Vending Machine App API for transaction
+20.						Go to step 26
+						No:
+21.						Did User press the Cancel Button?
+							Yes:
+22.							Go to Cancel State.
+							No:
+23.							Is currentSystemTime > startTime + 2 minutes?
+								Yes:
+24.								Go to Cancel State Program
+								No:
+25.								Go to step 6
+								
+26.	Is transaction successful? 
+		Yes:
+27.		Go to step 30
+		No:
+28.		Display "Transaction not successful, start again"
+29.		Go back to step 4
+			
+		
+30.	Is i < numOfProducts?
+		Yes:
+31.		slotID of this product, slotID = OrderedslotID[i]
+		
+32.		Update Inventory[slotID].quantity = Inventory[slotID].quantity - Session[slotID].quantity from it, 
+				
+33.		Is Inventory[slotID].quantity <= Inventory[slotID].minQuantity?
+			Yes:
+34.			Send Message to Operator: "Action Required - Only <Inventory[slotID].quantity> left for the product <Inventory[slotID].description>
+35.		Dispense <Session[slotID].quantity> pieces from Slot <SlotID>
+36.		Increase i by 1
+37.		Go back to step 30
+	
+38.	Display "Thankyou, enjoy your day"
+39.	Go back to IDLE Module.	
+40.	End
+	
+	
+	
+    	
