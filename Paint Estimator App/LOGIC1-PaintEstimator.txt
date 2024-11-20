@@ -1,0 +1,55 @@
+1. START
+2. Declare variables TotalArea, BaseAreaCoverage=11, FinishingAreaCoverage=16, BaseCans, FinishingCans, R1, R2.     
+3. Display: Recommended number of base coats=2.   
+4. Display: Do you wish to have a Base Coat?
+	YES:
+5.		Calculate TotalArea%BaseAreaCoverage and store it in R1.
+6.		Is R1=0?
+		YES:
+7.			Calculate TotalArea/BaseAreaCoverage and store it in BaseCans.
+		NO:
+8.			Calculate (TotalArea-R1)/BaseAreaCoverage and store it in BaseCans.
+9.			Add 1 to BaseCans.
+10.		Do you wish to have 1 layer of base coat?
+		YES:
+11.			Display: Number of Base Cans required: BaseCans.
+12.			Display: Recommended number of Finishing Layers: 2
+		NO:
+13.			Do you wish to have 2 layers of Base Coat?
+			YES:
+14.				Multiply BaseCans with 2 and store the result in BaseCans.
+15.				Display: Number of Base Cans required: BaseCans.
+16.				Display: Recommended number of Finishing Layers: 1
+			NO:
+17.				Display: You can only choose from the options given previously.
+18.				Go to Step 3.
+19.		Go to Step 21.
+	NO:
+20.		Display: Recommended number of finishing Layers=3
+21.		Calculate TotalArea%FinishingAreaCoverage and store it in R2
+22.		Is R2=0?
+		YES:
+23.			Calculate TotalArea/FinishingAreaCoverage and store it in FinishingCans.
+		NO:
+24.			Calculate (TotalArea-R2)/FinishingAreaCoverage and store it in FinishingCans.
+25.			Add 1 to FinishingCans.
+26.		Do you want to have 1 layer of Finishing Coat?
+		YES:
+27.			Display: Number of Finishing Cans required: FinishingCans.
+		NO:
+28.			Do you want to have 2 layers of Finishing Coats?
+			YES:
+29.				Multiply FinishingCans with 2 and store the result in FinishingCans.
+30.				Display: Number of Finishing Cans required: FinishingCans.
+			NO:
+31.				Do you want to have 3 layers of Finishing Coats?
+				YES:
+32.					Multiply FinishingCans with 3 and store the result in FinishingCans.
+33.					Display: Number of Finishing Cans required: FinishingCans.
+				NO:
+34.					Display: You can only choose from the options given previously.
+35.					Go to Step 20.
+36. Return BaseCans and FinishingCans.
+37. END.
+
+
