@@ -1,0 +1,40 @@
+1. START
+2. Enable all command buttons and row/column buttons of the input panel.
+3. Declare variables OrderedslotID[], i=0, quantity[]
+4. LED screen displays You can place the Order.
+5. Prompt: Enter SlotID
+6. Take User input in  OrderslotID[i]
+7. UserEnteredSlotID = OrderslotID[i]
+8. Prompt: How many selected items do you want?
+9. Store the input in Session[UserEnteredSlotID].quantity
+10. Is the Session[UserEnteredSlotID].quantity < Product[UserEnteredSlotID].maxQuantity?
+	YES:
+		11. Display Press Enter button to proceed.
+		12. Go to Step 17.
+	NO:
+		13. Display Sorry! The item is unavailable at the moment.
+		14. Go to Step 4.
+15. Did the user press Correct button?
+	YES:
+		16. Go to Step 8.
+17. Did the user press Enter button?
+	YES:
+		18. Display Do you want to add an item?
+			YES:
+				19. Go to Step 5
+			NO:
+				20. Display The order has been placed...
+	NO:
+		21. Go to Step 11.
+22. Did the user press Cancel button?
+YES:
+	23. Move to CANCEL module.
+NO:
+	24. Did the user press Pay button?
+		YES:
+			25. Return to main.
+		NO:
+			26. Display Press Pay button to proceed towards payment.
+			27. Go to Step 22.
+28. END.
+			
