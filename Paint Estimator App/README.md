@@ -38,3 +38,7 @@ This repository provides a paint estimation system that calculates the amount of
 
 This tool simplifies the paint estimation process by calculating the area, determining the number of cans, and providing a cost breakdown for painting a room.
 
+---
+
+You can check out the files available and the detailed presentation made to know the process in detail.
+
