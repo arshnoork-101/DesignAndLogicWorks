@@ -1,0 +1,9 @@
+1. START
+2. Disable all command buttons and row/coloumn buttons.
+3. Disable payment module hardware.
+4. Set PaymentOption, SlotID, numOfProducts and OrderedslotID[] to 0.
+5. Set OrderedslotID[], i, UserEnteredSlotID, and quantity[] to 0.
+6. Enable LED display screen.
+7. LED screen should display The process has terminated...
+8. Call IDLE state.
+9. END

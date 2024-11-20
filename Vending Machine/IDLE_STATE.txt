@@ -1,0 +1,19 @@
+1. START
+2. Disable Correct, Cancel, Enter and Pay buttons.
+3. Are Column/Row buttons enabled?
+	Yes:
+		4. Is the LED display screen enabled?
+			Yes:
+				5. LED screen displays Welcome. Select items by pressing buttons (A-E) and (1-10).
+				6. Is there any input through Column/Row buttons?
+					Yes:
+						7. Return to main.
+					No:
+						8. Go to Step 6.
+			No:
+				9. Enable the LED display screen.
+				10. Go to Step 5.
+	No:
+		11. Enable the Column/Row buttons.
+		12. Go to Step 9.
+13. END. 
