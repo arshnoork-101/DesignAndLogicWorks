@@ -1,0 +1,59 @@
+VALET PARKING TEST CASES
+
+Start
+Variables declared
+Prompted time frames and Valet tier
+Prompt "The normal fare is only for 3 hours. Each minute ahead costs a dollar."
+
+TEST CASE 1:
+1. Is the time_frame=M? : Yes
+2. Is the valet_tier=S? : Yes
+3. Update and display valet_parking = $10.00
+4. Do you want to give a tip? 
+    YES:
+       5. Take input from customer and store it in tip ( = $4.75 )
+6. Update valet_parking= valet_parking + tip
+
+TEST CASE 2:
+1. Is the time_frame=M? : No
+2. is the time_frame=E? : Yes
+3. Is the valet_tier=S? : Yes
+4. Update valet_parking= $20.00
+5. Do you want to give a tip? 
+    YES:
+       6. Take input from customer and store it in tip ( = $4.00 )
+7. Update valet_parking= valet_parking + tip
+
+TEST CASE 3:
+1. Is the time_frame=M? : Yes
+2. Is the valet_tier=S? : No
+3. Is the valet_tier=V? : Yes
+4. Update and display valet_parking= $15.00
+5. Do you want to give a tip? 
+   YES: 
+      6. Take input from customer and store it in tip ( = $ 2.50 )
+7. Update valet_parking= valet_parking + tip
+
+TEST CASE 4: 
+1. Is the time_frame=M? : No
+2. is the time_frame=E? : Yes
+3. Is the valet_tier=S? : No
+4. Is the valet_tier=V? : Yes
+5. Update valet_parking= $30.00
+6. Do you want to give a tip? 
+   YES: 
+      7. Take input from customer and store it in tip ( = $ 3.00 )
+8. Update valet_parking= valet_parking + tip
+
+COMMON ENDING:
+9. Was the vehicle parked for hours=3?
+    YES:
+       10. Go to Step 14.
+	NO:
+	   11. Was the vehicle parked for hours>3?
+	        YES:
+		      12. Prompt "Enter number of extra minutes" and store it in  extra_minutes
+			  13. Update valet_parking=valet_parking+extra_minutes
+14. Prompt valet_parking
+15. Prompt "Thank you. Enjoy your day. "
+              			

@@ -1,0 +1,67 @@
+TEST CASES RECEIPT
+COMMON START=
+START
+Variables declared
+
+TEST CASE 1:
+1. Prompt to enter cover charges and stored in cover_charges
+2. Prompt to enter ticket charges and stored in ticket_charges
+3. Paid for valet? : No
+4. Updated sub_total = cover_charges(entered) + ticket_charges(entered) + valet_parking(=0)
+5. Got a discount? : No
+6. Display sub_total
+7.Did you take snacks? : No
+8. Display sub_total
+
+TEST CASE 2:
+1. Prompt to enter cover charges and stored in cover_charges
+2. Prompt to enter ticket charges and stored in ticket_charges
+3. Paid for valet? : No
+4. Updated sub_total = cover_charges(=0) + ticket_charges(=0) + valet_parking(=0)
+5. Got a discount? : Yes
+6. Prompt user to enter discount and store it in discount
+7. Update sub_total=sub_total-discount
+8. Display sub_total
+9. Did you take snacks? : Yes
+10. Prompt user to input snacks cost and store it in SnackStandBill
+11. Update sub_total= sub_total +SnackStandBill
+12. Display sub_total
+
+TEST CASE 3:
+1. Prompt to enter cover charges and stored in cover_charges
+2. Prompt to enter ticket charges and stored in ticket_charges
+3. Paid for valet? : Yes
+4. Prompt the user to enter valet parking charges and store it in valet_parking
+5. Update sub_total = cover_charges(=0) + ticket_charges(=0) + valet_parking(entered)
+6. Got a discount? : No
+7. Display sub_total
+8. Did you take snacks? : No
+9. Display sub_total
+
+TEST CASE 4:
+1. Prompt to enter cover charges and stored in cover_charges
+2. Prompt to enter ticket charges and stored in ticket_charges
+3. Paid for valet? : Yes
+4. Prompt the user to enter valet parking charges and store it in valet_parking
+5. Update sub_total = cover_charges(=0) + ticket_charges(=0) + valet_parking(entered)
+6. Got a discount? : Yes
+7. Prompt user to enter discount and store it in discount
+8. Update sub_total=sub_total-discount
+9. Display sub_total
+10. Did you take snacks? : Yes
+11. Prompt user to input snacks cost and store it in SnackStandBill
+12. Update sub_total= sub_total +SnackStandBill
+13. Display sub_total
+
+COMMON ENDING=
+14. Do you want a receipt?
+    YES:
+	   15. Do you want it via email?
+	        YES:
+		       16. Take input from user for email and store it in email.
+			   17. Send the receipt to the email.
+			NO:
+               18. Print the physical copy of the receipt and give it to the customer.
+19. Display sub_total to the customer.
+19. Display Thank you for visiting. We hope to see you again.
+20. END.
