@@ -1,0 +1,45 @@
+PSEUDO CODE
+
+Solid Green + Advanced left Green arrow: 15 seconds
+Solid Green + Advanced left Amber arrow: 5 seconds
+Solid Amber: 10 seconds
+Solid Green + Advanced left Arrow(off): 45 seconds
+Solid Red: 75 seconds
+
+pedestrian_count=0, car_count=0, system_timer=0
+
+1. START
+2. Turn solid red light on.
+3. Set system_timer=75 seconds.
+4. Are there interruptions in the system?
+     YES: 
+         4.1 Take necessary action and go to Step 20.
+5. Is the pedestrian_count>=1?
+     YES: 
+         5.1 Set system_timer = 10 seconds
+6. Is the car_count> 4?
+     YES:
+         6.1 Set system_timer = 10 seconds
+7. Turn Solid Red light off.
+9. Turn the solid green + advanced left arrow on.
+10. Set system_timer=45 seconds
+11. Are there interruptions in the system?
+     YES: 
+         11.1 Take necessary action and go to Step 20.
+12. When system_timer = 15 seconds, turn the Advanced left Green arrow lights off.
+13. Turn the left amber arrow on.
+14. Set system_timer=20 seconds.
+15. Are there interruptions in the system?
+     YES: 
+         15.1 Take necessary action and go to Step 20.
+16. Turn off the left amber light. 
+17. Turn the solid amber light on.
+18. Set system_timer= 10 seconds.
+19. Are there interruptions in the system?
+     YES: 
+         19.1 Take necessary action and go to Step 20. 
+20. Interrupts have terminated?
+     Yes:
+         20.1 Reset the whole traffic system.
+21. Restart from Step 1.
+22. END.
