@@ -1,11 +1,13 @@
 # Traffic Light System Pseudo Code
 
-This directory contains the pseudo code for a comprehensive **Traffic Light System**. The system efficiently manages traffic signals, adjusting light timings based on real-time conditions such as pedestrian presence, vehicle counts, and system interruptions.
+This directory includes pseudo code for a **Traffic Light System** that dynamically manages traffic signals based on conditions like pedestrian presence, vehicle flow and system interruptions.
 
-## Overview
+## Key Features
 
-- **Dynamic Timing**: Adjusts based on traffic flow and pedestrian activity.
-- **Interrupt Handling**: Responds to and resolves unexpected events seamlessly.
-- **Traffic Signal Control**: Manages Solid Red, Green, and Amber lights, including advanced left-turn indicators.
+- **Adaptive Timing** for efficient traffic management.
+- **Interrupt Handling** to address unexpected situations.
+- **Signal Control** for Red, Green, Amber, and advanced turn indicators.
 
+## Usage
 
+Refer to the pseudo code file for detailed logic and flow.
